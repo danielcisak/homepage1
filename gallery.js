@@ -8,7 +8,7 @@ function onGallery(element)
 		
 		let imgNum = element.target.previousElementSibling.id.split('-')[1];
 		let img = document.querySelector('.gallery img');
-		img.setAttribute('src', `./images/IMG_${imgNum}.jpg`);
+		img.setAttribute('src', `./images-medium/IMG_${imgNum}.jpg`);
 		img.setAttribute('id', `IMG-${imgNum}`);
 	}
 }
@@ -29,7 +29,7 @@ function nextPhoto()
 	{
 		imgNum = 1;
 	}
-	img.setAttribute('src', `./images/IMG_${imgNum}.jpg`);
+	img.setAttribute('src', `./images-medium/IMG_${imgNum}.jpg`);
 	img.setAttribute('id', `IMG-${imgNum}`);
 }
 
@@ -42,7 +42,7 @@ function previousPhoto()
 	{
 		imgNum = 21;
 	}
-	img.setAttribute('src', `./images/IMG_${imgNum}.jpg`);
+	img.setAttribute('src', `./images-medium/IMG_${imgNum}.jpg`);
 	img.setAttribute('id', `IMG-${imgNum}`);
 }
 
